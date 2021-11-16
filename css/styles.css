@@ -124,6 +124,7 @@ h2 {
 	border-radius: 0;
 	top: 0px;
 }
+
 .navbar-inverse .navbar-toggle {
 	border-color: #5887FF;
 	background-color: #5887FF;
@@ -133,13 +134,14 @@ h2 {
 	background: transparent !important;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-/*background-color: #5887FF;*/;
+/*background-color: #5887FF;*/
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background: #5887FF;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color: #fff;
+	margin: auto;
 }
 .navbar-inverse .navbar-toggle:hover .icon-bar {
 	background: #fff;
@@ -324,22 +326,27 @@ text-align:center;
 }
 .banner-content .social-icons{
  text-align:center; 
- margin-top:20px;
+ margin-top:0px;
+ position: relative;
 }
 .banner-content .social-icons a{
 text-align: center;
 border: 1px solid #fff;
 border-radius: 90px !important;
-height: 52px;
+height: 32px;
 line-height: 60px;
 padding: 0px;
-width: 52px;
-display: inline-block;
+width: 32px;
+display: inline-flex;
 color:#fff;
-margin:0 6px;
+margin:0px 0px;
+justify-content: center;
 }
 .banner-content .social-icons a i{
-font-size:26px;
+font-size:20px;
+margin: 5px 5px;
+display: flex;
+justify-content: center;
 }
 .banner-content .social-icons a:hover {
 background:#5887FF;
@@ -486,6 +493,13 @@ border-radius:120px;
 width:300px;
 box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2);
 }
+.nickProfilePhoto img{
+	overflow:hidden;
+	transform: scaleX(-1);
+	border-radius:120px;
+	width:300px;
+	box-shadow: 12px 0px 0px 12px rgba(13, 113, 165, 0.2), -12px 0px 0px 12px rgba(109, 139, 232, 0.2);
+	}
 .tileBox p { 
 	font-size: 15px;
 	color: #777777;
@@ -942,6 +956,12 @@ color: #5887FF;
 color: #000;
 }
 @media (min-width: 768px) {
+
+.header .navbar {
+	display: flex;
+	justify-content: center;
+}
+
 .header .navbar-brand {
 	padding-left: 0;
 }
@@ -956,10 +976,11 @@ color: #000;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {	
+
 .banner-container > img {
-	min-width: 100%;
-	height:400px;
+min-width: 100%;
+height:400px;
 	
 }
 .team-member .member-img img {
@@ -1040,6 +1061,26 @@ display: inline-block;
 .header .container{
 padding:0px;
 }
+
+.banner-content header h1 {
+	text-align: center;
+	margin: -25px;
+	font-size: 4.5em;
+	font-weight: 700;
+	letter-spacing: .1em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.banner-content header p {
+	text-align: center;
+	font-size: 1.1em;
+	margin-bottom: -1.9em;
+	padding: 3em 1em;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
 .header #mainNav{
 background:#000 !important;
 padding:0px 15px;
@@ -1056,11 +1097,38 @@ margin-top: 30%;
 .caption{
 	font-size: 14px;
 }
+
+.header .navbar {
+	margin: 0px;
+	padding: 7% 4% 4% 4%;
+	background: rgb(255, 255, 255);
+	border: 0px;
+}
+
+.navbar-collapse{
+	max-height: 340px;
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	border-top: 1px solid transparent;
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+	-webkit-overflow-scrolling: touch;
+}
+
+.navbar-header{
+margin: -9% -6px;
+}
+
 .navbar-inverse .navbar-nav > li > a {
 	font-size: 0.9em;
 	padding: 5px 7px !important;
 	margin: 2px 0px;
 }
+
+.navbar .nav{
+	margin: 7.5px -15px;
+}
+
 .navbar-toggle {
 	margin: 17px;
 }
@@ -1162,3 +1230,15 @@ nav#filter li {
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+@media (max-width:394px) {
+	.banner-content header p {
+		text-align: center;
+		font-size: 1.1em;
+		margin-bottom: -1.9em;
+		padding: 3em 4em;
+		letter-spacing: 0.1em;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		}
+	}
