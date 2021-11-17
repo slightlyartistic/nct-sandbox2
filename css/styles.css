@@ -982,8 +982,23 @@ color: #000;
 .banner-container > img {
 min-width: 100%;
 height:400px;
-	
 }
+
+.banner-content header {
+    color: #fff;
+    padding-top: 12%;
+}
+
+.banner-content header p {
+text-align: center;
+font-size: 1.2em;
+margin-bottom: 5px;
+padding: 6px 8px;
+letter-spacing: .1em;
+line-height: 1.2em;
+text-transform: uppercase;
+}
+
 .team-member .member-img img {
 	max-width: 100%;
 }
