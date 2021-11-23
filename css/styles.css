@@ -131,8 +131,9 @@ h2 {
 }
 .header .navbar {
 	margin: 0;
-	background: transparent !important;
+	background: rgba(0, 0, 0, 0.9) !important;
 }
+
 .navbar-inverse .navbar-toggle .icon-bar {
 /*background-color: #5887FF;*/
 }
