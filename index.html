@@ -25,8 +25,15 @@
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
 <link rel="stylesheet" href="css/styles.css" />
+
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Slick Gallery -->
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -114,16 +121,17 @@
 <section id="quote" class="bg-parlex">
   <div class="parlex-back">
     <div class="container">
-     <div class="row">
-	<div class="col-md-12">
-    <header class="centered">
-      <h1><em>"I might actually be good at this."</em></h1>
-      <h4>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;- Literally Me&#160;&#160;(2021)</h4>
-  </header>
+      <div class="row">
+	      <div class="col-md-12">
+          <header class="centered">
+            <h1><em>"I might actually be good at this."</em></h1>
+            <h4>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;- Literally Me&#160;&#160;(2021)</h4>
+          </header>
+        </div>
       </div>
+      <!--/.container--> 
     </div>
-    <!--/.container--> 
-  </div>
+  </div>      
 </section>
 
 <!--Testimonials-->
@@ -134,71 +142,14 @@
       <h2>Testimonials</h2>
       <p>Thank you to my followers that let me post their Tweets & DMs.</p>
     </div>
-    <div class="row skillContainer">
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-1" class="diagram" data-percent="95.2%"></div>
-        <div class="chart-text">
-          <h4>Visual Designing</h4>
-          <p>Exp 4 years</p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-2" class="diagram" data-percent="75.2%"></div>
-        <div class="chart-text">
-          <h4>Frontend Developer</h4>
-          <p>Exp 8 years</p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-3" class="diagram" data-percent="85.6%"></div>
-        <div class="chart-text">
-          <h4>Backend Developer</h4>
-          <p>Exp 5 years</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>Programming Skills</h2>
-        <p class="mrgBtm20"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-      </div>
-      <div class="col-sm-6"> <br/>
-        <br/>
-        <br/>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>HTML5</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> <span class="sr-only">90% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>JavaScript</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">80% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>Angular</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>Knockout</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+</section>
+<section class="slider">
+  <div class = "fade">
+  <div><img src="images/testimonial-1-1.jpg" /></div>
+  <div"><img src="images/testimonial-2-1.jpg" /></div>
+  <div><img src="images/testimonial-3-1.jpg" /></div>
+  <div"><img src="images/testimonial-4-1.png" /></div>
   </div>
 </section>
 
@@ -427,5 +378,19 @@
 <script src="js/jquery.diagram.js"></script> 
 <script src="js/custom.js" type="text/javascript"></script> 
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="slick/slick.min.js">
+  $(document).on('ready', function() {
+    $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+    });
+  })
+</script>
+
 </body>
 </html>

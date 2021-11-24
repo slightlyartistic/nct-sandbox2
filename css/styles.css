@@ -8,6 +8,7 @@ Author URI: http://webthemez.com/
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 }
+
 body {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
@@ -116,6 +117,15 @@ h2 {
 }
 /* Header 
 ----------------------------------------------*/
+
+.banner-content header h1 {
+	filter: drop-shadow(0px 3px 3px #000);
+}
+
+.banner-content header p {
+	filter: drop-shadow(0px 3px 3px #000);
+}
+
 .header {
 	position: fixed;
 	width: 100%;
@@ -323,7 +333,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .banner-content header {
 color: #fff;
-padding-top: 20%;
+padding-top: 12%;
 }
 .banner-content .btn {
 text-align:center;
@@ -332,6 +342,7 @@ text-align:center;
  text-align:center; 
  margin-top:0px;
  position: relative;
+ filter: drop-shadow(0px 3px 3px #000);
 }
 .banner-content .social-icons a{
 text-align: center;
@@ -372,6 +383,7 @@ width: 125px;
 color:#5887FF;
 padding:8px 5px;
 margin-top:25px;
+filter: drop-shadow(0px 3px 3px #000);
 }
 .banner-content header  h1{
  text-align:center;
@@ -1090,6 +1102,7 @@ padding:0px;
 	letter-spacing: .1em;
 	line-height: 1em;
 	text-transform: uppercase;
+	
 }
 
 .banner-content header p {
