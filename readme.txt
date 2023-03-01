@@ -2,8 +2,8 @@ About
 ======
 Website construction project for my brother (Twitter - @NickCruzTrading)
 
-Project is incomplete. Using a template but I messed up at some point. 
-I planned on coming back to correct it but he bought a website instead.
+Project is incomplete. 
+While I was working on it he bought a website instead.
 Ungrateful bastard.
 Still love him, tho.
 
