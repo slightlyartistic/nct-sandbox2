@@ -1,6 +1,11 @@
 About
 ======
-Website construction project for @NickCruzTrading
+Website construction project for my brother (Twitter - @NickCruzTrading)
+
+Project is incomplete. Using a template but I messed up at some point. 
+I planned on coming back to correct it but he bought a website instead.
+Ungrateful bastard.
+Still love him, tho.
 
 Note
 ====
